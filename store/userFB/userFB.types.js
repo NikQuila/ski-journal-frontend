@@ -1,0 +1,3 @@
+export const USER_FB_ACTION_TYPES = {
+  SET_CURRENT_USER_FB: "SET_CURRENT_USER_FB",
+};

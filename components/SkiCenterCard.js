@@ -4,6 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 import { useFonts } from "expo-font";
 import AppLoading from "expo-app-loading";
 import { Ionicons } from "@expo/vector-icons";
+import fonts from "../utils/fonts";
 
 const SkiCenterCard = ({ title, imageUrl, description, id }) => {
   const navigation = useNavigation();
@@ -65,7 +66,7 @@ const SkiCenterCard = ({ title, imageUrl, description, id }) => {
         <View style={{ marginLeft: 5 }}>
           <Text
             style={{
-              fontFamily: "dyna-puff-regular",
+              fontFamily: fonts.textDefault,
               color: "white",
               paddingLeft: 10,
             }}
@@ -74,7 +75,7 @@ const SkiCenterCard = ({ title, imageUrl, description, id }) => {
           </Text>
           <Text
             style={{
-              fontFamily: "dyna-puff-regular",
+              fontFamily: fonts.textDefault,
               color: "white",
             }}
           >
@@ -84,7 +85,7 @@ const SkiCenterCard = ({ title, imageUrl, description, id }) => {
       </View>
       <Text
         style={{
-          fontFamily: "dyna-puff-regular",
+          fontFamily: fonts.textDefault,
           fontSize: 24,
           position: "absolute",
           color: "white",
@@ -118,7 +119,7 @@ const SkiCenterCard = ({ title, imageUrl, description, id }) => {
         <View style={{ marginLeft: 5, marginTop: 5 }}>
           <Text
             style={{
-              fontFamily: "dyna-puff-regular",
+              fontFamily: fonts.textDefault,
               color: "rgba(0, 255, 231, 1)",
               paddingLeft: 22,
             }}
@@ -127,7 +128,7 @@ const SkiCenterCard = ({ title, imageUrl, description, id }) => {
           </Text>
           <Text
             style={{
-              fontFamily: "dyna-puff-regular",
+              fontFamily: fonts.textDefault,
               color: "white",
             }}
           >
@@ -145,7 +146,7 @@ const styles = StyleSheet.create({
   },
   defaultText: {
     color: "white",
-    fontFamily: "dyna-puff-regular",
+    fontFamily: fonts.textDefault,
   },
   fonts: {
     marginBottom: 8,

@@ -20,6 +20,8 @@ import Modal from "react-native-modal";
 // import { BOLD_FONT, REGULAR_FONT } from "../../../constants/fontsNames";
 import { Icon } from "native-base";
 import { Button } from "@rneui/base";
+import colors from "../utils/colors";
+import fonts from "../utils/fonts";
 
 export const PickerFormInput = ({
   items,
@@ -126,25 +128,27 @@ const styles = StyleSheet.create({
     // margin: 10,
   },
   footer: {
-    // fontFamily: REGULAR_FONT,
+    fontFamily: fonts.textDefault,
     fontSize: 15,
     // color: TEXT_COLOR,
   },
   inactiveText: {
-    // fontFamily: BOLD_FONT,
-    fontSize: 20,
+    fontFamily: fonts.textDefault,
+    fontSize: 10,
+    color: colors.textDefaultColor,
+
     // color: TEXT_COLOR,
   },
   activeText: {
-    // fontFamily: BOLD_FONT,
-    fontSize: 20,
+    fontFamily: fonts.textDefault,
+    fontSize: 15,
     // color: PRIMARY_COLOR,
   },
   activeTextInput: {
     marginTop: 5,
-    // fontFamily: REGULAR_FONT,
+    fontFamily: fonts.textDefault,
     // color: TEXT_COLOR,
-    fontSize: 20,
+    fontSize: 10,
     padding: 10,
     backgroundColor: "white",
     // borderColor: PRIMARY_COLOR,
@@ -153,9 +157,9 @@ const styles = StyleSheet.create({
   },
   inactiveTextInput: {
     marginTop: 5,
-    // fontFamily: REGULAR_FONT,
+    fontFamily: fonts.textDefault,
     // color: TEXT_COLOR,
-    fontSize: 20,
+    fontSize: 15,
     padding: 10,
     backgroundColor: "white",
     // borderColor: LIGHT_TEXT_COLOR,
@@ -167,9 +171,9 @@ const styles = StyleSheet.create({
   },
   modalOption: {
     marginTop: 5,
-    // fontFamily: REGULAR_FONT,
+    fontFamily: fonts.textDefault,
     // color: TEXT_COLOR,
-    fontSize: 20,
+    fontSize: 15,
     padding: 10,
     backgroundColor: "white",
   },

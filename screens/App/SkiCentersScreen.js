@@ -44,12 +44,14 @@ const SkiCentersScreen = () => {
 
   return (
     <ScrollView>
-      <PickerFormInput
-        selected={courseSelected}
-        fn={handleFilter}
-        items={courses}
-        label="Seleccionar Región"
-      />
+      <View style={{ marginHorizontal: 10 }}>
+        <PickerFormInput
+          selected={courseSelected}
+          fn={handleFilter}
+          items={courses}
+          label="Select Region"
+        />
+      </View>
       {/* <Input
         placeholder="Select Region"
         leftIcon={<Ionicons name="search-outline" />}

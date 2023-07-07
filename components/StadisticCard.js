@@ -2,6 +2,7 @@ import { Text } from "@rneui/base";
 import { StyleSheet } from "react-native";
 import { View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import fonts from "../utils/fonts";
 
 const StadisticCard = ({ label, value, backgroundColor, iconName }) => {
   const styles = StyleSheet.create({
@@ -20,18 +21,21 @@ const StadisticCard = ({ label, value, backgroundColor, iconName }) => {
       padding: 10,
     },
     valueText: {
+      fontFamily: fonts.textTitle,
+      color: "white",
+      fontSize: 18,
       marginTop: 10,
     },
     labelText: {
+      fontFamily: fonts.textDefault,
       marginBottom: 10,
+      marginTop: 6,
     },
   });
   return (
     <View style={styles.container}>
       <Ionicons name={iconName} style={styles.icon} size={40} />
-      <Text style={styles.valueText} h4 h4Style={{ fontSize: 20 }}>
-        {value}
-      </Text>
+      <Text style={styles.valueText}>{value}</Text>
       <Text style={styles.labelText}>{label}</Text>
     </View>
   );

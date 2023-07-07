@@ -1,0 +1,10 @@
+<key>NSPhotoLibraryUsageDescription</key>
+<string>Give $(PRODUCT_NAME) permission to save photos</string>
+<key>NSCameraUsageDescription</key>
+<string>Give $(PRODUCT_NAME) permission to access your camera</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>Give $(PRODUCT_NAME) permission to use your microphone</string>
+<!-- Added permissions -->
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />

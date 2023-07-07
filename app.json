@@ -1,9 +1,10 @@
 {
   "expo": {
-    "name": "RNCourse",
-    "slug": "RNCourse",
+    "name": "Ski Journal",
+    "slug": "Ski Journal",
     "version": "1.0.0",
     "orientation": "portrait",
+    "backgroundColor": "#2c3d62",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
@@ -13,15 +14,11 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true,
-      "googleServicesFile": "./GoogleService-Info.plist"
+      "supportsTablet": true
     },
     "android": {
-      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
@@ -31,13 +28,18 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "@react-native-google-signin/google-signin"
-    ],
     "extra": {
       "eas": {
         "projectId": "dd597167-5ce8-4390-b086-8ab78b0b6d29"
       }
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ]
   }
 }

@@ -14,7 +14,7 @@ const TitlePhotoAuth = ({ noTitle }) => {
         <></>
       ) : (
         <Text h4 h4Style={styles.title}>
-          Ski Slopes Reservation
+          Ski Journal
         </Text>
       )}
     </View>

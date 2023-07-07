@@ -10,11 +10,6 @@ import colors from "../../utils/colors";
 import { AntDesign } from "@expo/vector-icons";
 import ImagesSlider from "../../components/ImagesSlider";
 // Auth
-import {
-  signInWithGooglePopup,
-  signInWithGoogleRedirect,
-  signIn,
-} from "../../firebase/firebase.utils";
 
 const TextDivider = ({ text }) => (
   <View style={{ flexDirection: "row", alignItems: "center" }}>
@@ -39,7 +34,6 @@ const LoginScreen = () => {
         }}
         icon={<AntDesign name="google" size={24} color={colors.appColor} />}
         title="Log in with Google"
-        onPress={signIn}
       />
     </View>
   );

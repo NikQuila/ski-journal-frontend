@@ -1,5 +1,6 @@
 import { Text } from "@rneui/base";
 import { View } from "react-native";
+import colors from "../utils/colors";
 
 const TextWithDotCircle = ({ circleColor, text }) => {
   return (
@@ -15,7 +16,7 @@ const TextWithDotCircle = ({ circleColor, text }) => {
           marginRight: 3,
         }}
       />
-      <Text>{text}</Text>
+      <Text style={{ color: colors.textDefaultColor }}>{text}</Text>
     </View>
   );
 };

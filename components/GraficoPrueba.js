@@ -53,7 +53,7 @@ const GraficoPrueba = () => {
 
   const data2 = [
     {
-      key: 1,
+      key: 5,
       value: 8,
       label: "Pozza",
       text: "18%",
@@ -62,7 +62,7 @@ const GraficoPrueba = () => {
       fontWeight: "bold",
     },
     {
-      key: 2,
+      key: 6,
       value: 6,
       label: "Buffaure",
       text: "30%",
@@ -71,7 +71,7 @@ const GraficoPrueba = () => {
       fontWeight: "bold",
     },
     {
-      key: 3,
+      key: 7,
       value: 5,
       label: "Alpe Cermis",
       text: "35%",
@@ -80,7 +80,7 @@ const GraficoPrueba = () => {
       fontWeight: "bold",
     },
     {
-      key: 4,
+      key: 8,
       value: 10,
       label: "Folgaria",
       text: "23%",
@@ -96,7 +96,6 @@ const GraficoPrueba = () => {
         <Card.Title>Ski Days</Card.Title>
         <Card.Divider />
         <BarChart
-          key={"sip"}
           data={data}
           initialSpacing={20}
           noOfSections={5}
@@ -109,13 +108,13 @@ const GraficoPrueba = () => {
         <Card.Title>Ski days</Card.Title>
         <Card.Divider />
         <View style={{ flexDirection: "row" }}>
-          <PieChart
+          {/* <PieChart
             data={data}
             donut
             radius={100}
             showText
             showValuesAsLabels={true}
-          />
+          /> */}
           <View style={{ marginTop: 40 }}>
             {data.map((item) => (
               <LabelForPie
@@ -131,16 +130,15 @@ const GraficoPrueba = () => {
         <Card.Title>Ski Days</Card.Title>
         <Card.Divider />
         <View style={{ marginLeft: 50 }}>
-          <BarChart
+          {/* <BarChart
             horizontal
-            key={"chupalop"}
             data={data2}
             initialSpacing={20}
             noOfSections={3}
             isAnimated
             frontColor={colors.appColor}
             roundedTop
-          />
+          /> */}
         </View>
       </Card>
     </View>

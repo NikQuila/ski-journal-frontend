@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
 import { Button, Dialog, CheckBox, ListItem, Avatar } from "@rneui/themed";
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { PickerFormInput } from "./PickerInput";
@@ -8,6 +9,7 @@ import snowConidtions from "../utils/snowConditions";
 import colors from "../utils/colors";
 
 const DialogFormDaily = ({ title }) => {
+  const navigation = useNavigation();
   const [visible1, setVisible1] = useState(false);
   const [checked, setChecked] = useState(1);
   // states input
@@ -34,7 +36,7 @@ const DialogFormDaily = ({ title }) => {
         title="+"
         titleStyle={{ fontSize: 24, padding: 8 }}
         size="lg"
-        onPress={toggleDialog1}
+        onPress={() => navigation.navigate("Daily Form")}
       />
 
       <Dialog isVisible={visible1} onBackdropPress={toggleDialog1}>
